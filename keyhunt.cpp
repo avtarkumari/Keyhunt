@@ -251,7 +251,7 @@ uint64_t THREADCOUNTER = 0;
 uint64_t FINISHED_ITEMS = 0;
 uint64_t OLDFINISHED_ITEMS = -1;
 
-uint8_t byte_encode_crypto = 0x00000;		/* Bitcoin  */
+uint8_t byte_encode_crypto = 0x00;		/* Bitcoin  */
 
 
 int vanity_rmd_targets = 0;
