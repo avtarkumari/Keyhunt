@@ -251,14 +251,14 @@ uint64_t THREADCOUNTER = 0;
 uint64_t FINISHED_ITEMS = 0;
 uint64_t OLDFINISHED_ITEMS = -1;
 
-uint8_t byte_encode_crypto = 0x00;		/* Bitcoin  */
+uint8_t byte_encode_crypto = 0x00000;		/* Bitcoin  */
 
 
 int vanity_rmd_targets = 0;
 int vanity_rmd_total = 0;
 int *vanity_rmd_limits = NULL;
 uint8_t ***vanity_rmd_limit_values_A = NULL,***vanity_rmd_limit_values_B = NULL;
-int vanity_rmd_minimun_bytes_check_length = 999999;
+int vanity_rmd_minimun_bytes_check_length = 999999999;
 char **vanity_address_targets = NULL;
 struct bloom *vanity_bloom = NULL;
 
@@ -268,8 +268,8 @@ uint64_t *steps = NULL;
 unsigned int *ends = NULL;
 uint64_t N = 0;
 
-uint64_t N_SEQUENTIAL_MAX = 0x100000000;
-uint64_t DEBUGCOUNT = 0x400;
+uint64_t N_SEQUENTIAL_MAX = 0x10000000000000;
+uint64_t DEBUGCOUNT = 0x90000000;
 uint64_t u64range;
 
 Int OUTPUTSECONDS;
@@ -286,7 +286,7 @@ int FLAGQUIET = 0;
 int FLAGMATRIX = 0;
 int KFACTOR = 1;
 int MAXLENGTHADDRESS = -1;
-int NTHREADS = 1;
+int NTHREADS = 6;
 
 int FLAGSAVEREADFILE = 0;
 int FLAGREADEDFILE1 = 0;
